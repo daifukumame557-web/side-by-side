@@ -23,12 +23,12 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             moveDirection = 1f;
-            transform.rotation = Quaternion.Euler(0, 90f, 0);
+            transform.rotation = Quaternion.Euler(0, 180f, 0);
         }
         else if (Input.GetKey(KeyCode.A))
         {
             moveDirection = -1f;
-            transform.rotation = Quaternion.Euler(0, -90f, 0);
+            transform.rotation = Quaternion.Euler(0, 0f, 0);
         }
 
         // Y軸（現在の落下速度など）はそのままキープし、X軸の速度だけを書き換える
